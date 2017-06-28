@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebContent/addpart.jsp=UTF-8
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/logmanager.jsp=UTF-8
+encoding//WebContent/partmanager.jsp=UTF-8
+encoding//WebContent/statistics.jsp=UTF-8
+encoding//WebContent/updatepart.jsp=UTF-8
+encoding//WebContent/workermanager.jsp=UTF-8
+encoding//src/com/hkj/oamanager/util/ConnectionManager.java=UTF-8
