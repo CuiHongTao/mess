@@ -1,0 +1,214 @@
+# Project: C”Ô—‘Œƒ◊÷”Œœ∑
+# Makefile created by Dev-C++ 5.10
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o PrintStart.o PrintEnd.o Information.o StateStruct.o Menu.o MenuStart.o File.o FightStart.o GoodsConsumeStart.o Goods.o CharacterChoose.o GoodsConsume.o GoodsStart.o ConsumeStruct.o ConsumeUse.o EquipStruct.o ConsumeInfor.o GoodsEquip.o EquipInfor.o GoodsEquipStart.o EquipStart.o Equip.o EquipChange.o EquipSetup.o SkillStruct.o SkillStart.o SkillStart2.o Skill.o Skill2.o SkillUse.o Fight.o MonsterStruct.o FightAttack.o Attribute.o Switch.o FightSkill.o FightEnd.o FightSkillStart.o FightSkillChoose.o FightChoose.o FightInfor.o FightGoods.o FightGoodsChoose.o Rands.o FightComputing.o FightAttackComputing.o CP.o FightInforChange.o "AttributeMonster\ .o" Map_Head.o Map_Load.o Map_Main.o Map_Move.o Map_NextGoto.o Map_People_Load.o Map_People_Save.o Map_People_Search.o Map_Put.o Map_Save.o NumberChange.o FightSkillUse.o FightSkillComputing.o
+LINKOBJ  = main.o PrintStart.o PrintEnd.o Information.o StateStruct.o Menu.o MenuStart.o File.o FightStart.o GoodsConsumeStart.o Goods.o CharacterChoose.o GoodsConsume.o GoodsStart.o ConsumeStruct.o ConsumeUse.o EquipStruct.o ConsumeInfor.o GoodsEquip.o EquipInfor.o GoodsEquipStart.o EquipStart.o Equip.o EquipChange.o EquipSetup.o SkillStruct.o SkillStart.o SkillStart2.o Skill.o Skill2.o SkillUse.o Fight.o MonsterStruct.o FightAttack.o Attribute.o Switch.o FightSkill.o FightEnd.o FightSkillStart.o FightSkillChoose.o FightChoose.o FightInfor.o FightGoods.o FightGoodsChoose.o Rands.o FightComputing.o FightAttackComputing.o CP.o FightInforChange.o "AttributeMonster .o" Map_Head.o Map_Load.o Map_Main.o Map_Move.o Map_NextGoto.o Map_People_Load.o Map_People_Save.o Map_People_Search.o Map_Put.o Map_Save.o NumberChange.o FightSkillUse.o FightSkillComputing.o
+LIBS     = -L"D:/devC++/Dev-Cpp/MinGW64/lib" -L"D:/devC++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/devC++/Dev-Cpp/MinGW64/include" -I"D:/devC++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/devC++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"D:/devC++/Dev-Cpp/MinGW64/include" -I"D:/devC++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/devC++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"D:/devC++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = C”Ô—‘Œƒ◊÷”Œœ∑.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+PrintStart.o: PrintStart.c
+	$(CC) -c PrintStart.c -o PrintStart.o $(CFLAGS)
+
+PrintEnd.o: PrintEnd.c
+	$(CC) -c PrintEnd.c -o PrintEnd.o $(CFLAGS)
+
+Information.o: Information.c
+	$(CC) -c Information.c -o Information.o $(CFLAGS)
+
+StateStruct.o: StateStruct.c
+	$(CC) -c StateStruct.c -o StateStruct.o $(CFLAGS)
+
+Menu.o: Menu.c
+	$(CC) -c Menu.c -o Menu.o $(CFLAGS)
+
+MenuStart.o: MenuStart.c
+	$(CC) -c MenuStart.c -o MenuStart.o $(CFLAGS)
+
+File.o: File.c
+	$(CC) -c File.c -o File.o $(CFLAGS)
+
+FightStart.o: FightStart.c
+	$(CC) -c FightStart.c -o FightStart.o $(CFLAGS)
+
+GoodsConsumeStart.o: GoodsConsumeStart.c
+	$(CC) -c GoodsConsumeStart.c -o GoodsConsumeStart.o $(CFLAGS)
+
+Goods.o: Goods.c
+	$(CC) -c Goods.c -o Goods.o $(CFLAGS)
+
+CharacterChoose.o: CharacterChoose.c
+	$(CC) -c CharacterChoose.c -o CharacterChoose.o $(CFLAGS)
+
+GoodsConsume.o: GoodsConsume.c
+	$(CC) -c GoodsConsume.c -o GoodsConsume.o $(CFLAGS)
+
+GoodsStart.o: GoodsStart.c
+	$(CC) -c GoodsStart.c -o GoodsStart.o $(CFLAGS)
+
+ConsumeStruct.o: ConsumeStruct.c
+	$(CC) -c ConsumeStruct.c -o ConsumeStruct.o $(CFLAGS)
+
+ConsumeUse.o: ConsumeUse.c
+	$(CC) -c ConsumeUse.c -o ConsumeUse.o $(CFLAGS)
+
+EquipStruct.o: EquipStruct.c
+	$(CC) -c EquipStruct.c -o EquipStruct.o $(CFLAGS)
+
+ConsumeInfor.o: ConsumeInfor.c
+	$(CC) -c ConsumeInfor.c -o ConsumeInfor.o $(CFLAGS)
+
+GoodsEquip.o: GoodsEquip.c
+	$(CC) -c GoodsEquip.c -o GoodsEquip.o $(CFLAGS)
+
+EquipInfor.o: EquipInfor.c
+	$(CC) -c EquipInfor.c -o EquipInfor.o $(CFLAGS)
+
+GoodsEquipStart.o: GoodsEquipStart.c
+	$(CC) -c GoodsEquipStart.c -o GoodsEquipStart.o $(CFLAGS)
+
+EquipStart.o: EquipStart.c
+	$(CC) -c EquipStart.c -o EquipStart.o $(CFLAGS)
+
+Equip.o: Equip.c
+	$(CC) -c Equip.c -o Equip.o $(CFLAGS)
+
+EquipChange.o: EquipChange.c
+	$(CC) -c EquipChange.c -o EquipChange.o $(CFLAGS)
+
+EquipSetup.o: EquipSetup.c
+	$(CC) -c EquipSetup.c -o EquipSetup.o $(CFLAGS)
+
+SkillStruct.o: SkillStruct.c
+	$(CC) -c SkillStruct.c -o SkillStruct.o $(CFLAGS)
+
+SkillStart.o: SkillStart.c
+	$(CC) -c SkillStart.c -o SkillStart.o $(CFLAGS)
+
+SkillStart2.o: SkillStart2.c
+	$(CC) -c SkillStart2.c -o SkillStart2.o $(CFLAGS)
+
+Skill.o: Skill.c
+	$(CC) -c Skill.c -o Skill.o $(CFLAGS)
+
+Skill2.o: Skill2.c
+	$(CC) -c Skill2.c -o Skill2.o $(CFLAGS)
+
+SkillUse.o: SkillUse.c
+	$(CC) -c SkillUse.c -o SkillUse.o $(CFLAGS)
+
+Fight.o: Fight.c
+	$(CC) -c Fight.c -o Fight.o $(CFLAGS)
+
+MonsterStruct.o: MonsterStruct.c
+	$(CC) -c MonsterStruct.c -o MonsterStruct.o $(CFLAGS)
+
+FightAttack.o: FightAttack.c
+	$(CC) -c FightAttack.c -o FightAttack.o $(CFLAGS)
+
+Attribute.o: Attribute.c
+	$(CC) -c Attribute.c -o Attribute.o $(CFLAGS)
+
+Switch.o: Switch.c
+	$(CC) -c Switch.c -o Switch.o $(CFLAGS)
+
+FightSkill.o: FightSkill.c
+	$(CC) -c FightSkill.c -o FightSkill.o $(CFLAGS)
+
+FightEnd.o: FightEnd.c
+	$(CC) -c FightEnd.c -o FightEnd.o $(CFLAGS)
+
+FightSkillStart.o: FightSkillStart.c
+	$(CC) -c FightSkillStart.c -o FightSkillStart.o $(CFLAGS)
+
+FightSkillChoose.o: FightSkillChoose.c
+	$(CC) -c FightSkillChoose.c -o FightSkillChoose.o $(CFLAGS)
+
+FightChoose.o: FightChoose.c
+	$(CC) -c FightChoose.c -o FightChoose.o $(CFLAGS)
+
+FightInfor.o: FightInfor.c
+	$(CC) -c FightInfor.c -o FightInfor.o $(CFLAGS)
+
+FightGoods.o: FightGoods.c
+	$(CC) -c FightGoods.c -o FightGoods.o $(CFLAGS)
+
+FightGoodsChoose.o: FightGoodsChoose.c
+	$(CC) -c FightGoodsChoose.c -o FightGoodsChoose.o $(CFLAGS)
+
+Rands.o: Rands.c
+	$(CC) -c Rands.c -o Rands.o $(CFLAGS)
+
+FightComputing.o: FightComputing.c
+	$(CC) -c FightComputing.c -o FightComputing.o $(CFLAGS)
+
+FightAttackComputing.o: FightAttackComputing.c
+	$(CC) -c FightAttackComputing.c -o FightAttackComputing.o $(CFLAGS)
+
+CP.o: CP.c
+	$(CC) -c CP.c -o CP.o $(CFLAGS)
+
+FightInforChange.o: FightInforChange.c
+	$(CC) -c FightInforChange.c -o FightInforChange.o $(CFLAGS)
+
+"AttributeMonster\ .o": AttributeMonster\ .c
+	$(CC) -c "AttributeMonster .c" -o "AttributeMonster .o" $(CFLAGS)
+
+Map_Head.o: Map_Head.c
+	$(CC) -c Map_Head.c -o Map_Head.o $(CFLAGS)
+
+Map_Load.o: Map_Load.c
+	$(CC) -c Map_Load.c -o Map_Load.o $(CFLAGS)
+
+Map_Main.o: Map_Main.c
+	$(CC) -c Map_Main.c -o Map_Main.o $(CFLAGS)
+
+Map_Move.o: Map_Move.c
+	$(CC) -c Map_Move.c -o Map_Move.o $(CFLAGS)
+
+Map_NextGoto.o: Map_NextGoto.c
+	$(CC) -c Map_NextGoto.c -o Map_NextGoto.o $(CFLAGS)
+
+Map_People_Load.o: Map_People_Load.c
+	$(CC) -c Map_People_Load.c -o Map_People_Load.o $(CFLAGS)
+
+Map_People_Save.o: Map_People_Save.c
+	$(CC) -c Map_People_Save.c -o Map_People_Save.o $(CFLAGS)
+
+Map_People_Search.o: Map_People_Search.c
+	$(CC) -c Map_People_Search.c -o Map_People_Search.o $(CFLAGS)
+
+Map_Put.o: Map_Put.c
+	$(CC) -c Map_Put.c -o Map_Put.o $(CFLAGS)
+
+Map_Save.o: Map_Save.c
+	$(CC) -c Map_Save.c -o Map_Save.o $(CFLAGS)
+
+NumberChange.o: NumberChange.c
+	$(CC) -c NumberChange.c -o NumberChange.o $(CFLAGS)
+
+FightSkillUse.o: FightSkillUse.c
+	$(CC) -c FightSkillUse.c -o FightSkillUse.o $(CFLAGS)
+
+FightSkillComputing.o: FightSkillComputing.c
+	$(CC) -c FightSkillComputing.c -o FightSkillComputing.o $(CFLAGS)

@@ -1,0 +1,46 @@
+# Project: C语言地图文件制作工程
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = map_maker.o file_begin.o file_Load.o file_input.o map_put.o map_head.o char_input.o
+LINKOBJ  = map_maker.o file_begin.o file_Load.o file_input.o map_put.o map_head.o char_input.o
+LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = C语言地图文件制作工程.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+map_maker.o: map_maker.c
+	$(CC) -c map_maker.c -o map_maker.o $(CFLAGS)
+
+file_begin.o: file_begin.c
+	$(CC) -c file_begin.c -o file_begin.o $(CFLAGS)
+
+file_Load.o: file_Load.c
+	$(CC) -c file_Load.c -o file_Load.o $(CFLAGS)
+
+file_input.o: file_input.c
+	$(CC) -c file_input.c -o file_input.o $(CFLAGS)
+
+map_put.o: map_put.c
+	$(CC) -c map_put.c -o map_put.o $(CFLAGS)
+
+map_head.o: map_head.c
+	$(CC) -c map_head.c -o map_head.o $(CFLAGS)
+
+char_input.o: char_input.c
+	$(CC) -c char_input.c -o char_input.o $(CFLAGS)
